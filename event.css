@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+  --main-color:#d4ea64;
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin:0; 
+  padding:0;
+  box-sizing: border-box;
+  outline: none; 
+  border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: #444;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+
+body{
+  background: #222;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+.header{
+  position: fixed;
+  top:0; 
+  left: 0; 
+  right: 0;
+  z-index: 10000;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:1.5rem 9%;
+}
+
+.header .logo{
+  color: #fff;
+  font-size: 2.5rem;
+  font-family:'Arapey', serif;
+}
+
+.header .logo span{
+  color:var(--main-color);
+  font-family:'Arapey', serif;
+}
+
+.header .navbar a{
+  font-size: 1.7rem;
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+  color:var(--main-color);
+}
+
+.header #nav-logo{
+  width: 50px;
+  cursor: pointer;
+}
+
+#menu-bars{
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.heading{
+  text-align: center;
+  padding-bottom: 2rem;
+  color:#fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.heading span{
+  color:var(--main-color);
+  text-transform: uppercase;
+}
+
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  padding:.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  background: #666;
+  color:#fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover{
+  background:var(--main-color);
+}
+
+
+.home .content{
+  text-align: center;
+  padding-top: 6rem;
+  margin:2rem auto;
+  max-width: 70rem;
+}
+
+.home .content h3{
+  color:#fff;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+}
+
+.home .content h3 span{
+  color:var(--main-color);
+  text-transform: uppercase;
+}
+
+.home .home-slider .swiper-slide{
+  overflow: hidden;
+  border-radius: .5rem;
+  height: 50rem;
+  width:35rem;
+}
+
+.home .home-slider .swiper-slide img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
